@@ -1,0 +1,52 @@
+<style>
+body {
+  background-image: url('../static/images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<html>
+<form action="/pred" method="POST">
+
+<br>
+<br>
+<label >Choose your State:</label>
+<br>
+
+
+
+<select name="State">
+  <option value="2">New York</option>
+  <option value="0">California</option>
+  <option value="1">Florida</option>
+
+</select>
+<br>
+<br>
+Enter your R&D Spend :
+<br>
+<br>
+<input type="text" name="R&D Spend"></input>
+<br>
+<br>
+Enter your Administration :
+<br>
+<br>
+<input type="text" name="Administration"></input>
+<br>
+<br>
+Enter your Marketing Spend :
+<br>
+<br>
+<input type="text" name="Marketing Spend"></input>
+
+<br>
+<br>
+<input type="submit"></input>
+
+</form>
+
+{{result}}
+</html>
